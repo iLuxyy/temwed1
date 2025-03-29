@@ -1,0 +1,348 @@
+*, html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.container1{
+  width: 100%;
+  height: 100vh;
+  background-color: brown;
+}
+
+.coverundangan{
+  width: 100%;
+  display: block;
+}
+
+.isiundangan{
+  display: none;
+}
+/*** menu ***/
+.menucontainer{  
+  height: 80px;  
+  background-color: rgba(255, 255, 255, 0.3) !important;
+  backdrop-filter: blur(4px);
+}
+
+.navigasi{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigasi>li {
+  list-style-type: none;
+  font-family: 'Alex Brush', cursive;
+}
+
+.navigasi>li>a { 
+  color: azure;
+  text-decoration: none;
+  font-size: 23px;
+  text-transform: capitalize;
+}
+
+.btnmenu{  
+  color: azure;
+  margin: 10px;
+  padding: 10px;
+}
+
+.btnmenu:hover{
+  background-color:brown;
+  transition: all .3s ease-in-out;
+}
+
+
+/*** halaman utama ***/
+.homecontainer{  
+  width: 100%;
+  height: 100vh;
+}
+
+.bg-image{
+  background-size: cover;  
+  background-position: center;
+  height: 100vh;
+  min-height: 100vh;
+}
+
+.homekonten{  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.konten1{
+  color: black;
+}
+.konten1 h1{
+  font-size: 4rem;
+  font-family: "Ms Madi", cursive;
+  font-style: normal;
+}
+.konten1 h4{
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+
+.konten1 p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
+
+/*** acara ***/
+.datecontainer{  
+  width: 100%;
+  height: auto;
+}
+
+.imagebridegroom{
+  width: 100%;
+}
+
+.datekonten{  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.boxdate{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.konten2{
+  width: 100%;
+  color: black;
+}
+
+.konten2 h1{
+  font-size: 3rem;
+  font-family: "Ms Madi", cursive;
+  font-style: normal;
+}
+
+.konten2 h2{
+  font-family: "Ms Madi", cursive;
+  font-style: normal;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.konten2 h4{
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;  
+  font-style: normal;
+}
+
+.konten2 p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
+
+/*** Akad ***/
+.akadcontainer{  
+  width: 100%;
+  height: 100vh;
+}
+
+.akadkonten{  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.kontenakad{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+}
+
+.boxakad{
+  width: 100%;
+  position: relative;
+}
+
+.isikontenakad{
+  padding-top: 150px;
+}
+
+.isikontenakad h2{
+  font-family: "Ms Madi", cursive;
+  font-style: normal;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.isikontenakad p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
+
+
+/*** galeri ***/
+.galericontainer{  
+  width: 100%;
+  height: 100vh;
+}
+
+.galerikonten{  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.boxgaleri{
+  width: 100%;
+}
+.galeri{  
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.kontengaleri{
+  padding: 10px;
+}
+
+.galerikonten h2{
+  font-family: "Ms Madi", cursive;
+  font-style: normal;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.galerikonten p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
+
+
+/*** galeri ***/
+.lokasicontainer{  
+  width: 100%;
+  height: 100vh;
+}
+
+.lokasikonten{  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.lokasikonten h2{
+  font-family: "Ms Madi", cursive;
+  font-style: normal;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.lokasikonten p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
+
+.boxlokasi{
+  width: 100%;
+}
+
+
+/*** gift ***/
+.giftcontainer{  
+  width: 100%;
+  height: 100vh;
+}
+
+.giftkonten{  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.giftkonten h2{
+  font-family: "Ms Madi", cursive;
+  font-style: normal;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.giftkonten p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
+
+.boxgift{
+  width: 100%;
+}
+.boxgift h5{
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+.boxgift p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
+
+/*** coundown ***/
+.countdown-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.countdown-box {  
+  border-radius: 360px;
+  margin: 0 5px;
+  width: 80px;
+  background-color: rgba(252, 120, 120, 0.3) !important;
+  backdrop-filter: blur(4px);
+  color: black; 
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+.countdown-box span {  
+  padding-top: 10px;
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+.countdown-box p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  display: block;
+}
+.tanggal{
+  margin-top: 50px;
+}
+.texthitungan{
+  font-family: 'Roboto', sans-serif;
+  font-size: 5px;
+  color: aliceblue;
+  position: absolute;
+}
+/*** mobile ***/
+@media (max-width: 575.98px) {    
+  .isikontenakad{
+    padding-top: 80px;
+  }
+}

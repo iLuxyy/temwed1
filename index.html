@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />    
+    <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css"/>
+    <script src="countdown/simplyCountdown.min.js"></script>
+    <title>Saintkreavi 01</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div id="coverundangan" class="coverundangan">
+        <div class="homecontainer">
+            <div class="bg-image" style="background-image:url(img/0309.gif);" >
+                <div class="col-12 homekonten align-items-center">
+                    <div class="konten1">                        
+                        <p>Save The Date</p>
+                        <h1>Olive & Reza</h1>
+                        <div class="countdown-container">
+                            <div class="countdown-box" id="days">
+                                <span id="daysNum">00</span>
+                                <p>hari</p>
+                            </div>
+                            <div class="countdown-box" id="hours">
+                              <span id="hoursNum">00</span>
+                              <p>jam</p>
+                            </div>
+                            <div class="countdown-box" id="minutes">
+                              <span id="minutesNum">00</span>
+                              <p>menit</p>
+                            </div>
+                            <div class="countdown-box" id="seconds">
+                              <span id="secondsNum">00</span>
+                              <p>detik</p>
+                            </div>
+                        </div>                          
+                        <button id="tombolbuka" onclick="toggleElement()" class="tanggal btn btn-danger">Lihat Undangan</button>
+                    </div>                                          
+                </div>                       
+            </div>
+        </div>  
+    </div>
+    <div id="isiundangan" class="isiundangan">
+        <div class="col-12 menucontainer fixed-bottom">
+            <nav>
+                <ul id="list-example"  class="navigasi fixed-bottom">                    
+                    <li><a href="#home" class="btnmenu bi bi-columns-gap"></a></li>
+                    <li><a href="#akad" class="btnmenu bi bi-calendar-heart"></a></li>
+                    <li><a href="#galeri" class="btnmenu bi bi-images"></a></li>
+                    <li><a href="#lokasi" class="btnmenu bi bi-pin-map"></a></li>
+                    <li><a href="#gift" class="btnmenu bi bi-gift-fill"></a></li>
+                </ul>
+            </nav>
+        </div>
+        <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+            <div id="home" class="akadcontainer align-items-center">
+                <div class="bg-image" style="background-image:url(img/bg1000px.jpg);" >                
+                    <div class="datekonten align-items-center">                           
+                        <div class="col-8 boxdate">                    
+                            <div class="row">
+                                <div class="col-12 col-lg-6 konten2 align-items-center" data-aos="flip-right">                     
+                                    <img src="img/foto1.png" class="img-fluid" alt="saintkreavi">
+                                    <h2>Olive Mega Ayunda</h2>
+                                    <p>Kajen - Pekalongan</p>                         
+                                </div>
+                                <div class="col-12 col-lg-6 konten2 align-items-center" data-aos="flip-right">
+                                    <img src="img/foto2.png" class="img-fluid" alt="saintkreavi">
+                                    <h2>Reza Mahendra</h2>
+                                    <p>Krapyak - Semarang</p>                         
+                                </div>
+                            </div>                                           
+                        </div>                                            
+                    </div>                           
+                </div>
+            </div>
+            <div id="akad" class="akadcontainer align-items-center">
+                <div class="bg-image" style="background-image:url(img/bg1000px.jpg);">
+                    <div class="akadkonten align-items-center">
+                        <div class="col-10 kontenakad">
+                            <div class="row">
+                                <div class="col-12 col-lg-6 boxakad align-items-center" data-aos="flip-right">
+                                    <img src="img/3-01.png" class="card-img" alt="saintkreavi">
+                                    <div class="card-img-overlay">
+                                        <div class="isikontenakad">
+                                            <h2 class="card-title">Akad Nikah</h2><br>
+                                            <p class="card-text"><b>JUMAT, 28 APRIL 2023</b><br>
+                                                pukul 08:00 WIB - selesai<br>
+                                                Gejlig - Kajen - Pekalongan
+                                            </p>
+                                            <button class="btn btn-danger btn-sm align-items-center">Google Maps</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6 boxakad align-items-center" data-aos="flip-right">
+                                    <img src="img/3-01.png" class="card-img" alt="saintkreavi">
+                                    <div class="card-img-overlay">
+                                        <div class="isikontenakad">
+                                            <h2 class="card-title">Resepsi</h2><br>
+                                            <p class="card-text"><b>SABTU, 19 OKTOBER 2024</b><br>
+                                                pukul 09:00 WIB - selesai<br>
+                                                Gor Jatidiri, Kajen, Pekalongan
+                                            </p>
+                                            <button class="btn btn-danger btn-sm align-items-center">Google Maps</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>           
+                </div>
+            </div>
+            <div id="galeri" class="galericontainer align-items-center">
+                <div class="bg-image" style="background-image:url(img/bg1000px.jpg);" >
+                    <div class=" galerikonten align-items-center">
+                        <div class="col-12 align-items-center">
+                            <p>MEMORY OF OUR STORY</p>
+                            <h2>Galeri</h2>                            
+                        </div>
+                    </div>
+                    <div class="galerikonten align-items-center">                    
+                        <div class="col-10 boxgaleri align-items-center">
+                            <div class="row galeri align-items-center">
+                                <div class="col-6 col-lg-4 kontengaleri align-items-center" data-aos="fade-down-left">
+                                    <a href="img/1.jpg" data-toggle="lightbox" data-caption="sandianita1" data-gallery="mygallery">
+                                        <img src="img/1.jpg" alt="sandianita1" class="img-fluid w-100 rounded">
+                                    </a>
+                                </div>
+                                <div class="col-6 col-lg-4 kontengaleri align-items-center" data-aos="fade-down-left">
+                                    <a href="img/2.jpg" data-toggle="lightbox" data-caption="sandianita2" data-gallery="mygallery">
+                                        <img src="img/2.jpg" alt="sandianita2" class="img-fluid w-100 rounded">
+                                    </a>
+                                </div>
+                                <div class="col-12 col-lg-4 kontengaleri align-items-center" data-aos="fade-down-left">
+                                    <a href="img/2.jpg" data-toggle="lightbox" data-caption="sandianita2" data-gallery="mygallery">
+                                        <img src="img/2.jpg" alt="sandianita2" class="img-fluid w-100 rounded">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>                         
+                    </div>                       
+                </div>
+            </div>
+            <div id="lokasi" class="lokasicontainer align-items-center">
+                <div class="bg-image" style="background-image:url(img/bg1000px.jpg);" >
+                    <div class="lokasikonten align-items-center">
+                        <div class="col-12 align-items-center">
+                            <p>The Venue</p>
+                            <h2>Location</h2>                            
+                        </div>
+                    </div>
+                    <div class="lokasikonten align-items-center" data-aos="flip-right">                    
+                        <div class="col-10 boxlokasi align-items-center">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d457.4616506673974!2d109.51243140171721!3d-6.937068269505823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6fdf9d35f5e3dd%3A0xec23b4330495cf2!2sPRANCIS!5e0!3m2!1sid!2sid!4v1694551620865!5m2!1sid!2sid"
+                                width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                            <p class="lokasikonten">Diharapkan untuk tidak salah alamat dan tanggal. Manakala tiba di tujuan namun tidak
+                                ada tanda-tanda sedang dilangsungkan pernikahan, boleh jadi Anda salah jadwal, atau salah tempat.</p>
+                        </div>                         
+                    </div>                       
+                </div>
+            </div>
+            <div id="gift" class="giftcontainer align-items-center">
+                <div class="bg-image" style="background-image:url(img/bg1000px.jpg);" >
+                    <div class="giftkonten align-items-center">
+                        <div class="col-12 align-items-center">
+                            <p>EXPRESSIONS OF LOVE</p>
+                            <h2>Send Gifts</h2>     
+                            <p>Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Sdr(i) berkenan hadir untuk memberikan do'a restu.</p>                       
+                        </div>
+                    </div>
+                    <div class="giftkonten align-items-center">
+                        <div class="col-10 kontenakad">
+                            <div class="row">
+                                <div class="col-12 col-lg-6 boxakad align-items-center" data-aos="flip-right">
+                                    <div class="card">
+                                        <div class="card-header">BRI</div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">1111-01-034444-53-5</h5>
+                                            <p class="card-text">Reza Mahendra</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6 boxakad align-items-center" data-aos="flip-right">
+                                    <div class="card">
+                                        <div class="card-header">BNI</div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">1111-01-034444-53-5</h5>
+                                            <p class="card-text">Reza Mahendra</p>
+                                        </div>
+                                    </div>
+                                </div>                            
+                            </div>
+                        </div>                 
+                    </div>                       
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("June 10, 2024 16:00:00").getTime();
+    
+        // Update the countdown every 1 second
+        var x = setInterval(function() {
+    
+          // Get the current date and time
+          var now = new Date().getTime();
+    
+          // Calculate the distance between now and the countdown date
+          var distance = countDownDate - now;
+    
+          // Calculate days, hours, minutes, and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+          // Display the countdown timer
+          document.getElementById("daysNum").innerHTML = formatTime(days);
+          document.getElementById("hoursNum").innerHTML = formatTime(hours);
+          document.getElementById("minutesNum").innerHTML = formatTime(minutes);
+          document.getElementById("secondsNum").innerHTML = formatTime(seconds);
+    
+          // If the countdown is over, display a message
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("daysNum").innerHTML = "00";
+            document.getElementById("hoursNum").innerHTML = "00";
+            document.getElementById("minutesNum").innerHTML = "00";
+            document.getElementById("secondsNum").innerHTML = "00";
+          }
+        }, 1000);
+    
+        // Function to format time with leading zero
+        function formatTime(time) {
+          return time < 10 ? "0" + time : time;
+        }
+      </script>
+    <script>
+        function toggleElement() {
+          var element = document.getElementById("isiundangan");
+          if (element.style.display === "none") {
+            element.style.display = "block";
+          } else {
+            element.style.display = "none";
+          }
+
+          var element = document.getElementById("coverundangan");
+          if (element.style.display === "block") {
+            element.style.display = "none";
+          } else {
+            element.style.display = "block";
+          }
+        }
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
